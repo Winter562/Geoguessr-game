@@ -1,0 +1,105 @@
+int main() {
+
+
+    int score = 0;
+    char input[50];
+
+    printf("Clue 1: This is the most visited country by the tourist.\n");
+
+    printf("Enter your guess: ");
+    scanf("%s", input);
+    if (strcmp(input, "France") == 0) {
+        printf("Correct! +1 point.\n");
+        score++;
+    } else {
+        printf("Incorrect. try again.\n");
+         printf("Clue 2: it is located in europe \n");
+        scanf("%s", input);
+        if (strcmp(input, "France") == 0) {
+        printf("Correct! +1 point.\n");
+        score++;}
+        else {
+            printf("incorrect,Its France");
+        }
+
+    }
+
+
+    printf("Clue 1: This country is also known as the power house of europe.\n");
+    printf("Enter your guess: ");
+    scanf("%s", input);
+    if (strcmp(input, "Germany") == 0) {
+        printf("Correct! +1 point.\n");
+        score++;
+    } else {
+        printf("Incorrect. Try again.\n");
+         printf("Clue 2: This country is famous for its automobile industry \n");
+        scanf("%s", input);
+        if (strcmp(input, "Germany") == 0) {
+        printf("Correct! +1 point.\n");
+        score++;}
+        else {
+            printf("incorrect,Its Germany");
+        }
+
+    }
+
+    printf("Clue 1: The capital city of this country is Tokyo.\n");
+    printf("Enter your guess: ");
+    scanf("%s", input);
+    if (strcmp(input, "Japan") == 0) {
+        printf("Correct! +1 point.\n");
+        score++;
+    } else {
+        printf("Incorrect. The correct answer is Japan.\n");
+    }
+
+
+    printf("Clue 1: This country used to rule over 30 percent of the world.\n");
+    printf("Enter your guess:\n ");
+    scanf("%s", input);
+    if (strcmp(input, "UK") == 0) {
+        printf("Correct! +1 point.\n");
+        score++;
+    } else {
+        printf("Incorrect. Try again.\n");
+
+    printf("Clue 2: India got independence from this country in 1947.\n");
+    printf("Enter your guess: \n");
+    scanf("%s", input);
+    if (strcmp(input, "UK") == 0) {
+        printf("Correct! +1 point.\n");
+        score++;
+    } else {
+        printf("Incorrect. Its UK .\n");
+
+    }
+
+    printf("Clue 1: This country does not exists today but was a former superpower nation\n");
+    printf("Enter your guess:\n ");
+    scanf("%s", input);
+    if (strcmp(input, "USSR") == 0) {
+        printf("Correct! +1 point.\n");
+        score++;
+    } else {
+        printf("Incorrect. Try again.\n");
+        printf("Clue 2: Modern russia was part of this nation\n");
+        printf("Enter your guess:\n ");
+        scanf("%s", input);
+        if (strcmp(input, "USSR") == 0) {
+        printf("Correct! +1 point.\n");
+        score++;
+    }
+    else {
+        printf("Incorrect. Its USSR .\n");
+
+    }
+    }
+
+
+
+    printf("Your final score: %d out of 5\n", score);
+
+    return 0;
+}
+}
