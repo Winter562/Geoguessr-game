@@ -4,12 +4,14 @@ int main() {
     int score = 0;
     char input[50];
 
+    printf("Guess the country from given clues (case sensitive) \n");
     printf("Clue 1: This is the most visited country by the tourist.\n");
 
     printf("Enter your guess: ");
     scanf("%s", input);
     if (strcmp(input, "France") == 0) {
-        printf("Correct! +1 point.\n");
+        printf("Correct! +2 point.\n");
+        score++;
         score++;
     } else {
         printf("Incorrect. try again.\n");
@@ -29,7 +31,8 @@ int main() {
     printf("Enter your guess: ");
     scanf("%s", input);
     if (strcmp(input, "Germany") == 0) {
-        printf("Correct! +1 point.\n");
+        printf("Correct! +2 point.\n");
+        score++;
         score++;
     } else {
         printf("Incorrect. Try again.\n");
@@ -39,19 +42,28 @@ int main() {
         printf("Correct! +1 point.\n");
         score++;}
         else {
-            printf("incorrect,Its Germany");
+            printf("incorrect,Its Germany\n");
         }
 
     }
 
-    printf("Clue 1: The capital city of this country is Tokyo.\n");
+    printf("Clue 1: This country is known as the land of the rising sun \n");
     printf("Enter your guess: ");
     scanf("%s", input);
     if (strcmp(input, "Japan") == 0) {
-        printf("Correct! +1 point.\n");
+        printf("Correct! +2 point.\n");
+        score++;
         score++;
     } else {
-        printf("Incorrect. The correct answer is Japan.\n");
+        printf("Incorrect. Try again.\n");
+         printf("Clue 2: The capital city of this country is Tokyo. \n");
+        scanf("%s", input);
+        if (strcmp(input, "Japan") == 0) {
+        printf("Correct! +1 point.\n");
+        score++;}
+        else {
+            printf("incorrect,Its Japan\n");
+        }
     }
 
 
@@ -59,7 +71,8 @@ int main() {
     printf("Enter your guess:\n ");
     scanf("%s", input);
     if (strcmp(input, "UK") == 0) {
-        printf("Correct! +1 point.\n");
+        printf("Correct! +2 point.\n");
+        score++;
         score++;
     } else {
         printf("Incorrect. Try again.\n");
@@ -79,11 +92,12 @@ int main() {
     printf("Enter your guess:\n ");
     scanf("%s", input);
     if (strcmp(input, "USSR") == 0) {
-        printf("Correct! +1 point.\n");
+        printf("Correct! +2 point.\n");
+        score++;
         score++;
     } else {
         printf("Incorrect. Try again.\n");
-        printf("Clue 2: Modern russia was part of this nation\n");
+        printf("Clue 2: Modern Russia was part of this nation\n");
         printf("Enter your guess:\n ");
         scanf("%s", input);
         if (strcmp(input, "USSR") == 0) {
@@ -98,7 +112,7 @@ int main() {
 
 
 
-    printf("Your final score: %d out of 5\n", score);
+    printf("Your final score: %d out of 10\n", score);
 
     return 0;
 }
